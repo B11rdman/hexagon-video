@@ -1,0 +1,28 @@
+.web-cam {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+video {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -125px;
+  left: -125px;
+}
+
+.full-screen-player {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: -0px;
+  left: 0px;
+}
+
+.full-screen-wrapper {
+  width: 800px;
+  height: 600px;
+  border-radius: 0px;
+}
