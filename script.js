@@ -14,38 +14,19 @@ const serviceValues = Object.freeze({
   },
 });
 
-const player = document.getElementById("video-player");
+const player = document.getElementById("video-player-hex");
 
-//////////////////////////// NEW CODE ////////////////////////////
 const modal = document.getElementById("myModal");
 const close = document.getElementsByClassName("close")[0];
-////////////////////////////////////////////////////////
 
 document.addEventListener("click", (e) => {
-  if (e.target.id === "video-player") {
-    //////////////////////////// OLD CODE ////////////////////////////
-    // const wrapper = document.getElementsByClassName("web-cam")[0];
-    // player.classList.add("full-screen-player");
-    // wrapper.classList.add("full-screen-wrapper");
-
-    // player.muted = false;
-    // player.controls = false;
-    // player.play();
-
-    // player.addEventListener("ended", (event) => {
-    //   player.classList.remove("full-screen-player");
-    //   wrapper.classList.remove("full-screen-wrapper");
-    // });
-    ////////////////////////////////////////////////////////
-
-    //////////////////////////// NEW CODE ////////////////////////////
+  if (e.target.id === "video-player-hex") {
     modal.style.display = "block";
 
     close.onclick = function () {
       modal.style.display = "none";
       player.play();
     };
-    ////////////////////////////////////////////////////////
   }
 
   if (e.target.id === "calculate") {
@@ -62,7 +43,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-//////////////////////////// NEW CODE ////////////////////////////
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";

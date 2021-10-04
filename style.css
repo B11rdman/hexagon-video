@@ -2,10 +2,10 @@
   width: 250px;
   height: 250px;
   border-radius: 125px;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
-video {
+#video-player-hex {
   width: 500px;
   height: 500px;
   position: absolute;

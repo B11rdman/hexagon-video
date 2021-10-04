@@ -9,13 +9,13 @@
   </head>
   <body>
     <div class="web-cam">
-      <video controls autoplay muted id="video-player">
-        <!-- THIS VIDEO IS 12 SECONDS LONG -->
-        <source src="./videos/movie_1.mp4" type="video/mp4" />
-      </video>
+      <div>
+        <video controls autoplay muted id="video-player-hex">
+          <source src="./videos/movie_1.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
 
-    <!-- The Modal -->
     <div id="myModal" class="modal">
       <video controls autoplay muted id="video-player">
         <source src="./videos/movie_1.mp4" type="video/mp4" />
@@ -25,22 +25,6 @@
         <span class="close">&times;</span>
       </div>
     </div>
-    <!-- The Modal End -->
-
-    <form action="">
-      <input type="checkbox" id="service1" name="service1" class="check" />
-      <label for="service1"> Service 1</label><br />
-      <input type="checkbox" id="service2" name="service2" class="check" />
-      <label for="service2"> Service 2</label><br />
-      <input type="checkbox" id="service3" name="service3" class="check" />
-      <label for="service3"> Service 3</label><br />
-      <input type="checkbox" id="service4" name="service4" class="check" />
-      <label for="service4"> Service 4</label><br />
-
-      <button type="button" id="calculate">Calculate</button>
-    </form>
-
-    <div id="result"></div>
 
     <script src="./script.js"></script>
   </body>
